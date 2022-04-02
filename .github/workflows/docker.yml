@@ -81,5 +81,6 @@ jobs:
         with:
           context: image/
           file: image/Dockerfile
+          push: true
           tags: |
             bitsondatadev/trino-notebook:${{steps.getrefs.outputs.sha12}}, bitsondatadev/trino-notebook:latest
